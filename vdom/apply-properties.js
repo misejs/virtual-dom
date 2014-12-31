@@ -17,7 +17,7 @@ function applyProperties(node, props, previous) {
             if (isObject(propValue)) {
                 patchObject(node, props, previous, propName, propValue);
             } else if (propValue !== undefined) {
-                node[propName] = propValue
+                node.setAttribute(propName,propValue)
             }
         }
     }
